@@ -3,70 +3,29 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
+import 'package:hello_rectangle/category.dart';
 
-class HelloFriend extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-          color: Colors.deepOrange,
-          child: Center(
-            child: MyListTile()
-          )
-    );
-  }
+const _categoryName = 'Cake';
+const _categoryIcon = Icons.cake;
+const _categoryColor = Colors.green;
+
+
+void main() {
+  runApp(UnitConverterApp());
 }
 
-const _rowHeight = 100.0;
-const _name = "Birthdays";
-class MyListTile extends StatelessWidget {
+class UnitConverterApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    assert(debugCheckHasMaterial(context));
-    return Material(
-      color: Colors.transparent,
-      child: Container(
-        height: _rowHeight,
-        child: InkWell(
-          borderRadius: BorderRadius.all(Radius.circular(50.0)),
-          highlightColor: Colors.grey[50],
-          splashColor: Colors.grey[100],
-          onTap: () {
-            print('I was tapped!');
-          },
-          child: Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Padding(padding: EdgeInsets.only(right: 8.0), child: Icon(Icons.cake, color: Colors.white, size: 60.0)),
-                Center(child: Text(
-                  _name,
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.display1.copyWith(
-                    color: Colors.white,
-                    fontSize: 24.0,
-                    fontFamily: 'Playball',
-                    //fontWeight: FontWeight.w700
-                  ),
-                ))
-              ],
-            ),
-          ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Unit Converter',
+      home: Scaffold(
+        backgroundColor: Colors.green[100],
+        body: Center(
+          child: Category(name: _categoryName, color: _categoryColor, iconLocation: _categoryIcon),
         ),
       ),
     );
   }
-}
-
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: Scaffold(
-      //appBar: AppBar(
-      //  title: Text('Hello Friend!'),
-      //  backgroundColor: Colors.deepOrangeAccent
-      //),
-      body: HelloFriend(),
-    ),
-  ));
 }
