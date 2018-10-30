@@ -19,6 +19,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  english_words: ^3.1.0
 
 dev_dependencies:
   flutter_test:
@@ -64,5 +65,26 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
+  fonts:
+  - family: AlexBrush
+    fonts:
+      - asset: res/fonts/Alex_Brush/AlexBrush-Regular.ttf
+        weight: 700
+  - family: AlfaSlabOne
+    fonts:
+      - asset: res/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf
+        weight: 700
+  - family: Bangers
+    fonts:
+      - asset: res/fonts/Bangers/Bangers-Regular.ttf
+        weight: 700
+  - family: BlackOpsOne
+    fonts:
+      - asset: res/fonts/Black_Ops_One/BlackOpsOne-Regular.ttf
+        weight: 700
+  - family: Lobster
+    fonts:
+      - asset: res/fonts/Lobster/Lobster-Regular.ttf
+        weight: 700
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages
