@@ -45,8 +45,8 @@ class MyListTile extends StatelessWidget {
                   style: Theme.of(context).textTheme.display1.copyWith(
                     color: Colors.white,
                     fontSize: 26.0,
-                    //fontFamily: 'Lobster',
-                    fontWeight: FontWeight.w700
+                    fontFamily: 'Playball',
+                    //fontWeight: FontWeight.w700
                   ),
                 ))
               ],
