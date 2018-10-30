@@ -16,7 +16,7 @@ class HelloFriend extends StatelessWidget {
   }
 }
 
-const _rowHeight = 120.0;
+const _rowHeight = 100.0;
 const _name = "Birthdays";
 class MyListTile extends StatelessWidget {
   @override
@@ -34,17 +34,17 @@ class MyListTile extends StatelessWidget {
             print('I was tapped!');
           },
           child: Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: EdgeInsets.all(8.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Padding(padding: EdgeInsets.only(right: 12.0), child: Icon(Icons.cake, color: Colors.white, size: 22.0)),
+                Padding(padding: EdgeInsets.only(right: 8.0), child: Icon(Icons.cake, color: Colors.white, size: 60.0)),
                 Center(child: Text(
                   _name,
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.display1.copyWith(
                     color: Colors.white,
-                    fontSize: 26.0,
+                    fontSize: 24.0,
                     fontFamily: 'Playball',
                     //fontWeight: FontWeight.w700
                   ),
