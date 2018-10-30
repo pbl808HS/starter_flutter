@@ -16,8 +16,8 @@ class HelloFriend extends StatelessWidget {
   }
 }
 
-const _rowHeight = 260.0;
-const _name = "Happy Birthday my Friend!";
+const _rowHeight = 120.0;
+const _name = "Birthdays";
 class MyListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -27,25 +27,26 @@ class MyListTile extends StatelessWidget {
       child: Container(
         height: _rowHeight,
         child: InkWell(
-          borderRadius: BorderRadius.all(5.0),
-          highlightColor: Color(50),
-          splashColor: Color(100),
+          borderRadius: BorderRadius.all(Radius.circular(50.0)),
+          highlightColor: Colors.grey[50],
+          splashColor: Colors.grey[100],
           onTap: () {
-            print('Thank you!');
+            print('I was tapped!');
           },
           child: Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: EdgeInsets.all(16.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Padding(padding: EdgeInsets.only(right: 16.0, bottom: 16.0), child: Icon(Icons.cake, color: Colors.white, size: 32.0)),
+                Padding(padding: EdgeInsets.only(right: 12.0), child: Icon(Icons.cake, color: Colors.white, size: 22.0)),
                 Center(child: Text(
                   _name,
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.display1.copyWith(
                     color: Colors.white,
-                    fontSize: 24.0,
-                    fontFamily: 'Lobster'
+                    fontSize: 26.0,
+                    //fontFamily: 'Lobster',
+                    fontWeight: FontWeight.w700
                   ),
                 ))
               ],
