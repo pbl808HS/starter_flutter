@@ -3,70 +3,19 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-
-class HelloFriend extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-          color: Colors.deepOrange,
-          child: Center(
-            child: MyListTile()
-          )
-    );
-  }
-}
-
-const _rowHeight = 100.0;
-const _name = "Birthdays";
-class MyListTile extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    assert(debugCheckHasMaterial(context));
-    return Material(
-      color: Colors.transparent,
-      child: Container(
-        height: _rowHeight,
-        child: InkWell(
-          borderRadius: BorderRadius.all(Radius.circular(50.0)),
-          highlightColor: Colors.grey[50],
-          splashColor: Colors.grey[100],
-          onTap: () {
-            print('I was tapped!');
-          },
-          child: Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Padding(padding: EdgeInsets.only(right: 8.0), child: Icon(Icons.cake, color: Colors.white, size: 60.0)),
-                Center(child: Text(
-                  _name,
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.display1.copyWith(
-                    color: Colors.white,
-                    fontSize: 24.0,
-                    fontFamily: 'Playball',
-                    //fontWeight: FontWeight.w700
-                  ),
-                ))
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
+import 'package:hello_rectangle/category_route.dart';
 
 void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: Scaffold(
-      //appBar: AppBar(
-      //  title: Text('Hello Friend!'),
-      //  backgroundColor: Colors.deepOrangeAccent
-      //),
-      body: HelloFriend(),
-    ),
-  ));
+  runApp(UnitConverterApp());
+}
+
+class UnitConverterApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Unit Converter',
+      home: CategoryRoute(),
+    );
+  }
 }
