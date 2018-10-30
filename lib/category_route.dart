@@ -17,7 +17,7 @@ class CategoryRoute extends StatelessWidget {
     'Currency'
   ];
 
-  static const _baseColors = <Color> [
+  static const _baseColors = <Color>[
     Colors.teal,
     Colors.orange,
     Colors.pinkAccent,
@@ -39,7 +39,7 @@ class CategoryRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     final categories = <Category>[];
 
-    for (var i = 0; i <= _categoryNames.length; i++) {
+    for (var i=0; i<_categoryNames.length; i++) {
       categories.add(Category(
           name: _categoryNames[i],
           color: _baseColors[i],
