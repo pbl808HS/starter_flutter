@@ -69,22 +69,42 @@ flutter:
   - family: AlexBrush
     fonts:
       - asset: res/fonts/Alex_Brush/AlexBrush-Regular.ttf
-        weight: 700
+        weight: 500
   - family: AlfaSlabOne
     fonts:
       - asset: res/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf
-        weight: 700
+        weight: 500
   - family: Bangers
     fonts:
       - asset: res/fonts/Bangers/Bangers-Regular.ttf
-        weight: 700
+        weight: 500
   - family: BlackOpsOne
     fonts:
       - asset: res/fonts/Black_Ops_One/BlackOpsOne-Regular.ttf
-        weight: 700
+        weight: 500
   - family: Lobster
     fonts:
       - asset: res/fonts/Lobster/Lobster-Regular.ttf
-        weight: 700
+        weight: 500
+  - family: MrDafoe
+    fonts:
+      - asset: res/fonts/Mr_Dafoe/MrDafoe-Regular.ttf
+        weight: 500
+  - family: Norican
+    fonts:
+      - asset: res/fonts/Norican/Norican-Regular.ttf
+        weight: 500
+  - family: Pacifico
+    fonts:
+      - asset: res/fonts/Pacifico/Pacifico-Regular.ttf
+        weight: 500
+  - family: Playball
+    fonts:
+      - asset: res/fonts/Playball/Playball-Regular.ttf
+        weight: 500
+  - family: Yellowtail
+    fonts:
+      - asset: res/fonts/Yellowtail/Yellowtail-Regular.ttf
+        weight: 500
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages
