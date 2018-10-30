@@ -27,7 +27,7 @@ class MyListTile extends StatelessWidget {
       child: Container(
         height: _rowHeight,
         child: InkWell(
-          //borderRadius: _borderRadius,
+          borderRadius: BorderRadius.all(5.0),
           highlightColor: Color(50),
           splashColor: Color(100),
           onTap: () {
@@ -35,16 +35,16 @@ class MyListTile extends StatelessWidget {
           },
           child: Padding(
             padding: EdgeInsets.all(10.0),
-            child: Column(
+            child: Row(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Padding(padding: EdgeInsets.only(right: 16.0, bottom: 16.0), child: Icon(Icons.cake, color: Colors.white, size: 72.0)),
+                Padding(padding: EdgeInsets.only(right: 16.0, bottom: 16.0), child: Icon(Icons.cake, color: Colors.white, size: 32.0)),
                 Center(child: Text(
                   _name,
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.display1.copyWith(
                     color: Colors.white,
-                    fontSize: 40.0,
+                    fontSize: 24.0,
                     fontFamily: 'Lobster'
                   ),
                 ))
